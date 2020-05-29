@@ -1,4 +1,4 @@
-# Google-Alert-Link-Grabber
+# Google-Alert-Article-Scraper
 A link grabber for PDFs generated from Google Alerts
 
 Instructions:
