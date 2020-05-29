@@ -49,7 +49,7 @@ rawList = []
 places = []
 f = open("links.txt", "a")
 #readArray = ["2018.09.pdf", "2018.10.pdf","2018.11.pdf","2018.12.pdf","2019.01.pdf","2019.02.pdf","2019.03.pdf","2019.04.pdf","2019.05.pdf","2019.06.pdf","2019.07.pdf","2019.08.pdf","2019.09.pdf","2019.10.pdf","2019.11.pdf"]
-readArray = ["2018.09.pdf"]
+readArray = ["2018.09.pdf","2018.12.pdf","2019.03.pdf","2019.06.pdf","2019.09.pdf"]
 arrayCount = 0
 
 for i in range(len(readArray)):
