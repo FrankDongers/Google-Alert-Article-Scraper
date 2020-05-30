@@ -101,38 +101,38 @@ with open('links.txt', 'r+') as filehandle:
 	isPersistent = False
 
 	#Create model input files
-	if (isPersistent = False)
-	with open('model/input/input_master.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+	if (isPersistent == False):
+		with open('model/input/input_master.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_europe.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_europe.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_asia.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_asia.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_northamerica.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_northamerica.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_africa.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_africa.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_oceana.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_oceana.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_southamerica.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_southamerica.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
-	with open('model/input/input_other.csv', 'a') as file:
-		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-		write_file.writerow(["id", "title", "text", "continent", "time"])
+		with open('model/input/input_other.csv', 'a') as file:
+			write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+			write_file.writerow(["id", "title", "text", "continent", "time"])
 
 
 	for line in filehandle:
@@ -143,7 +143,7 @@ with open('links.txt', 'r+') as filehandle:
 		print ("Scanning... ", i)
 		
 		try:
-			#deal with URL
+			#deal with URL (4 types)
 			countryLabel = "N/A"
 			tempArray = line.split("https://www",1)
 			if (len(tempArray) > 1):
@@ -167,8 +167,10 @@ with open('links.txt', 'r+') as filehandle:
 			domainExt = processedWord.split(".",1)[1]
 			try:
 				domainExt = domainExt.split(".",1)[1]
+				print ("*Domain extention has multiple (.), splitting to determine location origin*")
 			except:
 				pass
+
 			if domainExt in domainDict.keys():
 				countryLabel = domainDict[domainExt]
 			else:
@@ -181,7 +183,7 @@ with open('links.txt', 'r+') as filehandle:
 					#print (match['country']['names']['en'])
 					#print("=========")
 				except:
-					print("*IP Not Found*")
+					print("*IP not found! Domain of extention: " + domainExt +" was not identifiable*")
 					pass
 
 			tempVal = countryLabel.replace('\'', '').replace('{', '').replace('}', '')
@@ -258,8 +260,11 @@ with open('links.txt', 'r+') as filehandle:
 				sys.exit(0)
 			except SystemExit:
 				os._exit(0)
-		except:
+		except Exception as e:
+			print (e)
+			print("======================")
 			print("Last line completed =" + completedLines[-1])
+			print("======================")
 			pass
 		i = i + 1
 
