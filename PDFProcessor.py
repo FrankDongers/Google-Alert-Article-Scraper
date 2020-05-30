@@ -102,7 +102,7 @@ for x in rawList:
 count = 1
 for i in places:
 	if not isinstance(i, Null):
-		f.write(i.getLink() + "," + i.getDate() + "\n")
+		f.write(i.getLink() + "," + i.getDate() +"\n")
 		count = count + 1
 
 f.close()

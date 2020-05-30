@@ -36,6 +36,8 @@ oceana = ["New Zealand","Australia"]
 south_america = ["Colombia"]
 na = ["N/A"]
 
+completedLines = []
+
 domainDict = {"ae":"United Arab Emirates",
 "ar":"Argentina",
 "al":"Albania",
@@ -96,13 +98,43 @@ domainDict = {"ae":"United Arab Emirates",
 file = "output.csv"
 with open('links.txt', 'r+') as filehandle:
 	i = 0
-	euroCounter = 1
-	northCounter = 1
-	asiaCounter = 1
-	africaCounter = 1
-	oceanaCounter = 1
-	southCounter = 1
-	naCounter = 1
+	isPersistent = False
+
+	#Create model input files
+	if (isPersistent = False)
+	with open('model/input/input_master.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_europe.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_asia.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_northamerica.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_africa.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_oceana.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_southamerica.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+	with open('model/input/input_other.csv', 'a') as file:
+		write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+		write_file.writerow(["id", "title", "text", "continent", "time"])
+
+
 	for line in filehandle:
 		splitArray = line.split(",")
 		linkVal = splitArray[0]
@@ -149,7 +181,7 @@ with open('links.txt', 'r+') as filehandle:
 					#print (match['country']['names']['en'])
 					#print("=========")
 				except:
-					#print("Not Found**")
+					print("*IP Not Found*")
 					pass
 
 			tempVal = countryLabel.replace('\'', '').replace('{', '').replace('}', '')
@@ -169,7 +201,6 @@ with open('links.txt', 'r+') as filehandle:
 			else:
 				contientVal = "N/A"
 
-
 			#load and scrape site
 			#r  = requests.get(linkVal)
 			#data = r.text
@@ -186,72 +217,49 @@ with open('links.txt', 'r+') as filehandle:
 			articleTitle = article.title
 
 			if (articleText != "" and articleText != " " and linkVal.lower().find(".pdf") == -1):
+				completedLines.append(line)
+				with open('model/input/input_master.csv', 'a') as file:
+					write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+					write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
+
 				if (contientVal == "Europe"):
-					if (euroCounter == 0):
-						with open('input_europe.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							euroCounter = euroCounter + 1
-					with open('input_europe.csv', 'a') as file:
+					with open('model/input/input_europe.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
 				elif(contientVal == "Asia"):
-					if (asiaCounter == 0):
-						with open('input_asia.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							asiaCounter = asiaCounter + 1
-					with open('input_asia.csv', 'a') as file:
+					with open('model/input/input_asia.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
 				elif(contientVal == "North America"):
-					if (northCounter == 0):
-						with open('input_northamerica.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							northCounter = northCounter + 1
-					with open('input_northamerica.csv', 'a') as file:
+					with open('model/input/input_northamerica.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
 				elif(contientVal == "Africa"):
-					if (africaCounter == 0):
-						with open('input_africa.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							africaCounter = africaCounter + 1
-					with open('input_africa.csv', 'a') as file:
+					with open('model/input/input_africa.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
 				elif(contientVal == "Oceana"):
-					if (oceanaCounter == 0):
-						with open('input_oceana.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							oceanaCounter = oceanaCounter + 1
-					with open('input_oceana.csv', 'a') as file:
+					with open('model/input/input_oceana.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
 				elif(contientVal == "South America"):
-					if (southCounter == 0):
-						with open('input_southamerica.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							southCounter = southCounter + 1
-					with open('input_southamerica.csv', 'a') as file:
+					with open('model/input/input_southamerica.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
-				else:
-					if (naCounter == 0):
-						with open('input.csv', 'a') as file:
-							write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-							write_file.writerow(["id", "title", "text", "continent", "time"])
-							naCounter = naCounter + 1
-					with open('input.csv', 'a') as file:
+				else:		
+					with open('model/input/input_other.csv', 'a') as file:
 						write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 						write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
-
+		
+		except KeyboardInterrupt:
+			print ("KeyboardInterrupt")
+			print("Last line completed: " + completedLines[-1])
+			try:
+				sys.exit(0)
+			except SystemExit:
+				os._exit(0)
 		except:
-			print("timeout")
+			print("Last line completed =" + completedLines[-1])
 			pass
 		i = i + 1
 
