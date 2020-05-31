@@ -11,6 +11,11 @@ characterVector <- stopwords("smart")
 customList <- c("circular")
 finalStopWordList <- append(characterVector, customList)
 
+csv_date <- vector()
+csv_region <- vector()
+csv_content <- character()
+csv_image <- vector()
+
 for (s in article_list) {
   inputLocation <- str_split(s, "/")
   inputLength <- length(inputLocation[[1]])
@@ -55,7 +60,23 @@ for (s in article_list) {
     png(filename=tempfilenamepng, width = 750, height = 750, res = 135)
     plot(mod.out.corr)
     dev.off()
+    
+    tempimgLoc <- paste("https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/",inputLocation,"/", d, ".png?raw=true", sep="")
+    
+    
+    tempSummaryData <- readChar(tempfilenametxt, file.info(tempfilenametxt)$size)
+    print (tempSummaryData)
+  
+    csv_date <- c(csv_date, d)
+    csv_region <- c(csv_region, inputLocation)
+    csv_content <- c(csv_content, tempSummaryData)
+    csv_image <- c(csv_image, tempimgLoc)
+    
     #labelTopics(First_STM, topics = NULL, n = 5, frexweight = 0.5)
     #rm(newsites,processed,out,docs,vocab,meta,First_STM)
   }
 }
+
+csv.data <- data.frame(csv_date, csv_region, csv_content,csv_image)
+print(csv.data)
+write.csv(csv.data,"/Users/FrankMAC/Desktop/Google-Alert-Link-Grabber/model/output/PowerBI_output.csv", row.names = FALSE)

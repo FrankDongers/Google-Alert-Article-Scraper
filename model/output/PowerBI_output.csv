@@ -1,0 +1,506 @@
+"csv_date","csv_region","csv_content","csv_image"
+"2018.09","input_master","Topic 1 Top Words:
+ 	 Highest Prob: compani, product, sustain, economi, circular, report, effort 
+ 	 FREX: circular, effort, transpar, aspect, measur, safeti, visit 
+ 	 Lift: august, circular, transpar, aspect, divis, passion, verifi 
+ 	 Score: circular, august, aspect, transpar, safeti, measur, standard 
+Topic 2 Top Words:
+ 	 Highest Prob: recycl, product, design, brand, economi, plastic, chang 
+ 	 FREX: expens, farm, brand, america, push, engin, product 
+ 	 Lift: farm, endors, expens, repli, stringent, lack, remanufactur 
+ 	 Score: farm, recycl, expens, push, america, compon, engin 
+Topic 3 Top Words:
+ 	 Highest Prob: custom, design, compani, mckinsey, servic, make, cost 
+ 	 FREX: custom, mckinsey, drive, hard, hardwar, servic, experi 
+ 	 Lift: store, mckinsey, devic, prefer, snap, hardwar, drive 
+ 	 Score: custom, mckinsey, repair, store, design, compon, drive 
+Topic 4 Top Words:
+ 	 Highest Prob: canada, economi, build, prosper, coalit, sustain, institut 
+ 	 FREX: canada, coalit, prosper, build, john, smart, natur 
+ 	 Lift: gather, eddec, ikea, loblaw, nei, smarter, walmart 
+ 	 Score: canada, coalit, prosper, gather, john, institut, unilev 
+Topic 5 Top Words:
+ 	 Highest Prob: exhibit, italian, intern, china, organ, subscrib, environment 
+ 	 FREX: exhibit, italian, subscrib, regist, login, reserv, trial 
+ 	 Lift: login, reserv, trial, edit, exhibit, italian, subscrib 
+ 	 Score: login, exhibit, italian, subscrib, agreement, reserv, trial 
+Topic 6 Top Words:
+ 	 Highest Prob: economi, recycl, action, materi, wast, plastic, requir 
+ 	 FREX: action, commiss, perspect, eus, fact, affect, confer 
+ 	 Lift: influenti, maintain, perspect, eus, subject, heard, imposs 
+ 	 Score: influenti, commiss, perspect, raw, action, subject, present 
+Topic 7 Top Words:
+ 	 Highest Prob: climat, pakistan, chang, challeng, meet, research, countri 
+ 	 FREX: pakistan, asep, parliamentari, tree, climat, mep, partnership 
+ 	 Lift: asep, asia-europ, asian, mps, parliamentari, parliamentarian, theme 
+ 	 Score: pakistan, theme, climat, parliamentari, asep, mep, meet 
+Topic 8 Top Words:
+ 	 Highest Prob: percent, infrastructur, increas, economi, chang, research, institut 
+ 	 FREX: infrastructur, percent, scale, institut, research, adapt, ident 
+ 	 Lift: ident, ambit, infrastructur, massiv, spent, guid, percent 
+ 	 Score: ident, percent, institut, infrastructur, ambit, research, flow 
+Topic 9 Top Words:
+ 	 Highest Prob: plastic, environ, chariti, global, world, million, support 
+ 	 FREX: chariti, rais, ellen, platform, million, environ, join 
+ 	 Lift: inspir, transmit, chariti, ellen, assembl, macarthur, urg 
+ 	 Score: chariti, ellen, transmit, plastic, rais, macarthur, platform 
+Topic 10 Top Words:
+ 	 Highest Prob: wast, recycl, landfil, product, litter, zealand, plastic 
+ 	 FREX: zealand, litter, landfil, appli, direct, scheme, cent 
+ 	 Lift: examin, zealand, cent, appli, direct, bud, cotton 
+ 	 Score: zealand, examin, litter, landfil, direct, appli, scheme 
+Topic 11 Top Words:
+ 	 Highest Prob: sustain, busi, hungari, develop, council, economi, compani 
+ 	 FREX: hungari, busi, sustain, corpor, council, leader, program 
+ 	 Lift: valu, wbcsd, hungari, lifestyl, usual, corpor, survey 
+ 	 Score: hungari, sustain, corpor, valu, busi, council, program 
+Topic 12 Top Words:
+ 	 Highest Prob: plastic, recycl, wast, economi, scotland, product, year 
+ 	 FREX: mahindra, scotland, pradesh, scottish, ticket, machin, metro 
+ 	 Lift: madhya, pradesh, shivraj, amravati, anand, andhra, beij 
+ 	 Score: plastic, scotland, mahindra, ticket, scottish, pradesh, recycl 
+Topic 13 Top Words:
+ 	 Highest Prob: packag, recycl, plastic, materi, product, group, sustain 
+ 	 FREX: packag, barrier, load, contain, germani, award, secur 
+ 	 Lift: empti, stone, fachpack, subsidiari, label, barrier, load 
+ 	 Score: packag, custom, label, load, barrier, contain, recycl 
+Topic 14 Top Words:
+ 	 Highest Prob: environment, monitor, ton, group, design, green, protect 
+ 	 FREX: monitor, ton, sewag, discharg, nitrogen, annual, establish 
+ 	 Lift: nitrogen, pose, sewag, discharg, treatment, supervis, monitor 
+ 	 Score: ton, monitor, pose, discharg, sewag, treatment, nitrogen 
+Topic 15 Top Words:
+ 	 Highest Prob: recycl, plastic, bottl, beverag, produc, make, food 
+ 	 FREX: beverag, bottl, children, food, mandatori, local, fire 
+ 	 Lift: end--lif, gap, guarante, children, beverag, reform, bin 
+ 	 Score: bottl, recycl, beverag, end--lif, children, plastic, mandatori 
+Topic 16 Top Words:
+ 	 Highest Prob: fashion, cloth, recycl, brand, collect, destroy, market 
+ 	 FREX: fashion, cloth, destroy, french, fast, burn, inciner 
+ 	 Lift: wood, yarn, fashion, cloth, french, stock, fast 
+ 	 Score: fashion, cloth, destroy, wood, french, fast, stock 
+Topic 17 Top Words:
+ 	 Highest Prob: wast, recycl, world, marin, plastic, ocean, tonn 
+ 	 FREX: marin, garbag, south, rubbish, litter, tonn, solid 
+ 	 Lift: garbag, photo, south, began, virtual, bank, marin 
+ 	 Score: photo, marin, rubbish, south, solid, litter, tonn 
+Topic 18 Top Words:
+ 	 Highest Prob: black, presid, process, technolog, environment, director, ceo 
+ 	 FREX: black, glass, presid, ventur, director, carbon, execut 
+ 	 Lift: attract, -founder, black, display, indigen, liquid, glass 
+ 	 Score: black, glass, presid, liquid, ventur, carbon, process 
+Topic 19 Top Words:
+ 	 Highest Prob: economi, recycl, wast, product, polici, propos, public 
+ 	 FREX: polici, propos, opinion, principl, australia, broader, life 
+ 	 Lift: opinion, broader, embrac, australia, comment, -recycl, coca-cola 
+ 	 Score: opinion, polici, australia, propos, principl, recoveri, comment 
+Topic 20 Top Words:
+ 	 Highest Prob: economi, job, wast, product, recycl, countri, make 
+ 	 FREX: job, african, employ, rubbish, found, lifetim, replac 
+ 	 Lift: come, lifetim, fossil, african, averag, border, foreign 
+ 	 Score: come, job, rubbish, employ, found, african, studi 
+","https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/input_master/2018.09.png?raw=true"
+"2018.12","input_master","Topic 1 Top Words:
+ 	 Highest Prob: pla, plant, total, corbion, product, bioplast, market 
+ 	 FREX: document, pla, corbion, lactic, bioplast, ventur, acid 
+ 	 Lift: -gmo, bernard, lactid, lumini, mold, monom, pdla 
+ 	 Score: pla, corbion, document, bioplast, lactic, acid, luminy® 
+Topic 2 Top Words:
+ 	 Highest Prob: scrap, -wast, debt, mine, govern, china, citi 
+ 	 FREX: pakistan, imf, debt, scrap, -wast, aluminum, mine 
+ 	 Lift: harri, here, aftermath, ailment, ajk, automat, balochistan 
+ 	 Score: debt, pakistan, imf, aluminum, scrap, -wast, mine 
+Topic 3 Top Words:
+ 	 Highest Prob: move, plastic, european, materi, economi, food, product 
+ 	 FREX: move, european, circular, built, research, suschem, food 
+ 	 Lift: fat, steilemann, cefic, ecp, markus, strongest, suschem 
+ 	 Score: move, suschem, eupc, plastic, fertilis, european, feedstock 
+Topic 4 Top Words:
+ 	 Highest Prob: wast, recycl, scs, sustain, economi, styren, potenti 
+ 	 FREX: scs, styren, request, polystyren, anaerob, digest, farmer 
+ 	 Lift: aotearoa, cea, deepest, eni, eps-bas, ineo, jen 
+ 	 Score: scs, styren, request, anaerob, polystyren, digest, cea 
+Topic 5 Top Words:
+ 	 Highest Prob: china, cooper, develop, meet, economi, relat, water 
+ 	 FREX: zhang, bilater, cooper, china-eu, indonesia, relat, mutual 
+ 	 Lift: anniversari, belt, bilater, spruce, zhang, -hydrocarbon, algeria 
+ 	 Score: zhang, bilater, china-eu, china, mutual, cooper, zerouati 
+Topic 6 Top Words:
+ 	 Highest Prob: brand, fashion, compani, industri, luxuri, economi, mccartney 
+ 	 FREX: realreal, consign, manganes, mccartney, luxuri, stella, patent 
+ 	 Lift: consignor, realreal, -commerc, -made, amyzf, attorney, bench 
+ 	 Score: luxuri, realreal, manganes, mccartney, stella, consign, lithium-ion 
+Topic 7 Top Words:
+ 	 Highest Prob: plastic, year, economi, wast, global, time, compani 
+ 	 FREX: precious, greenbiz, smartphon, repair, big, tesco, margin 
+ 	 Lift: echa, makow, vanguard, verg, -minut, -part, afraid 
+ 	 Score: tesco, greenbiz, load, precious, smartphon, verg, treasuri 
+Topic 8 Top Words:
+ 	 Highest Prob: recycl, wast, compani, industri, sustain, brand, textil 
+ 	 FREX: jean, denim, cotton, textil, threat, fabric, fiber 
+ 	 Lift: cutting-edg, indigo, post-industri, sheer, lenz, refibra, scarf 
+ 	 Score: threat, denim, jean, yarn, mill, fabric, lenz 
+Topic 9 Top Words:
+ 	 Highest Prob: inform, session, link, releas, click, content, visit 
+ 	 FREX: session, search, url, click, subscrib, link, bar 
+ 	 Lift: homepag, temporarili, wwwwebwirecom, url, session, search, discov 
+ 	 Score: session, homepag, url, click, subscrib, search, temporarili 
+Topic 10 Top Words:
+ 	 Highest Prob: wast, sector, govern, scotland, recycl, landfil, economi 
+ 	 FREX: sepa, scottish, scotland, carpet, mandatori, complianc, sector 
+ 	 Lift: -manufactur, abuja, adekunl, aftercar, along, anukam, aquif 
+ 	 Score: scotland, sepa, carpet, scottish, enjoy, mandatori, anthesi 
+Topic 11 Top Words:
+ 	 Highest Prob: economi, sustain, climat, develop, share, citi, industri 
+ 	 FREX: privaci, phone, cement, concret, mobil, parti, share 
+ 	 Lift: congo, davo, endang, eur, gorilla, grauer, hoard 
+ 	 Score: privaci, permiss, gorilla, concret, cement, zoo, phone 
+Topic 12 Top Words:
+ 	 Highest Prob: packag, sustain, recycl, consum, plastic, product, food 
+ 	 FREX: what, packag, bill, flexibl, law, dow, deposit 
+ 	 Lift: grasp, tom, what, water-bas, outweigh, flavor, kerri 
+ 	 Score: what, packag, dow, corbion, deposit, premium, kerri 
+Topic 13 Top Words:
+ 	 Highest Prob: recycl, plastic, bottl, water, percent, compani, found 
+ 	 FREX: found, nestlé, rpet, bottl, pet, supplier, north 
+ 	 Lift: californian, carbonlit, joliett, lehigh, mexico, quadrupl, rpet 
+ 	 Score: found, nestlé, rpet, bottl, pet, plastrec, nwna 
+Topic 14 Top Words:
+ 	 Highest Prob: wast, plastic, manag, countri, economi, region, local 
+ 	 FREX: decentr, indic, metric, accumul, googl, brandt, popul 
+ 	 Lift: microorgan, singapor, gigawatt, mismanag, terawatt, youv, decentr 
+ 	 Score: decentr, brandt, googl, indic, suitabl, ferment, accumul 
+Topic 15 Top Words:
+ 	 Highest Prob: plastic, recycl, packag, wast, economi, materi, technolog 
+ 	 FREX: coca-cola, packag, pet, allianc, stop, plastic, ioniqa 
+ 	 Lift: -shore, ecostor, high-grad, stewardship, stop, fran, ioniqa 
+ 	 Score: plastic, stop, coca-cola, pet, packag, ioniqa, zealand 
+Topic 16 Top Words:
+ 	 Highest Prob: fashion, agriprotein, compani, sustain, innov, industri, millibet 
+ 	 FREX: agriprotein, millibet, insect, protein, taipei, kere, regen 
+ 	 Lift: agriprotein, antwerp, aquacultur, aquafe, benelux, entomologist, fishmeal 
+ 	 Score: agriprotein, millibet, insect, taipei, protein, fashion, taiwan 
+Topic 17 Top Words:
+ 	 Highest Prob: wast, sustain, environ, environment, climat, plastic, action 
+ 	 FREX: dow, organis, conserv, action, environ, campaign, climat 
+ 	 Lift: serbia, -region, belgrad, diego, donoso, jim, mercuri 
+ 	 Score: dow, conserv, olymp, unep, zoom, serbia, ireland 
+Topic 18 Top Words:
+ 	 Highest Prob: economi, busi, materi, sustain, product, design, technolog 
+ 	 FREX: hpe, asset, page, biomass, servic, wind, financi 
+ 	 Lift: rothman, -hpe, andov, ball, blade, cso, end-- 
+ 	 Score: hpe, page, end--, biomass, hpes, asset, retir 
+Topic 19 Top Words:
+ 	 Highest Prob: plastic, find, wast, year, ocean, citi, action 
+ 	 FREX: find, young, david, ocean, polyolefin, island, guid 
+ 	 Lift: katz, baker, carcinogen, community-l, find, planetari, sustainia 
+ 	 Score: find, young, plastic, island, polyolefin, katz, david 
+Topic 20 Top Words:
+ 	 Highest Prob: wast, sustain, busi, taiwan, recycl, social, product 
+ 	 FREX: taiwan, worker, repurpos, student, corpor, social, glass 
+ 	 Lift: beneficiari, chi, liber, mall, apart, bamboo, birthday 
+ 	 Score: taiwan, worker, liber, repurpos, prize, pool, student 
+","https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/input_master/2018.12.png?raw=true"
+"2019.03","input_master","Topic 1 Top Words:
+ 	 Highest Prob: attach, author, tool, request, demolit, edg, page 
+ 	 FREX: author, attach, edg, demolit, page, url, request 
+ 	 Lift: homepag, malform, url, adminlexologycom, author, errordocu, syntax 
+ 	 Score: author, attach, edg, url, demolit, contractor, page 
+Topic 2 Top Words:
+ 	 Highest Prob: plastic, develop, solut, wast, industri, fish, sustain 
+ 	 FREX: xylitol, oat, fazer, liveabl, fish, net, singapor 
+ 	 Lift: efsa, farrugia, gum, mammal, masterplan, temasek, xylos 
+ 	 Score: xylitol, oat, fazer, liveabl, fish, malta, hull 
+Topic 3 Top Words:
+ 	 Highest Prob: economi, product, engin, compani, materi, model, busi 
+ 	 FREX: engin, indic, ikea, fruit, circular, india, disrupt 
+ 	 Lift: newer, orang, philosophi, product--aservic, reevalu, abus, asim 
+ 	 Score: engin, ikea, fruit, philosophi, disrupt, indic, juic 
+Topic 4 Top Words:
+ 	 Highest Prob: recycl, plastic, global, economi, busi, london, work 
+ 	 FREX: london, ecoin, pepsico, youth, latin, minist, eni 
+ 	 Lift: concess, inaugur, metropolitano, abdulaziz, aramco, borough, ccep 
+ 	 Score: ecoin, wbcsd, pepsico, eni, latin, london, pet 
+Topic 5 Top Words:
+ 	 Highest Prob: -wast, recycl, wast, collect, product, electron, india 
+ 	 FREX: -wast, electron, phone, worker, india, donat, chariti 
+ 	 Lift: bangalor, aeropress, ayton, backup, bean, bri, brodi 
+ 	 Score: -wast, donat, worker, india, bean, phone, refurbish 
+Topic 6 Top Words:
+ 	 Highest Prob: water, develop, economi, citi, asean, countri, recycl 
+ 	 FREX: asean, covid-, vietnam, water, pandem, congress, consumer 
+ 	 Lift: bloc, indonesian, uptak, wildfir, asean, bike, bushmeat 
+ 	 Score: asean, covid-, pandem, vietnam, congress, bloc, vietnames 
+Topic 7 Top Words:
+ 	 Highest Prob: plastic, commit, economi, fashion, sustain, global, packag 
+ 	 FREX: transcontinent, upm, fashion, ellen, macarthur, cloth, foundat 
+ 	 Lift: barilla, biofor, defruyt, françoi, fur, geness, loccitan 
+ 	 Score: upm, transcontinent, fashion, raflatac, mccartney, macarthur, stella 
+Topic 8 Top Words:
+ 	 Highest Prob: wast, recycl, plastic, economi, govern, cent, year 
+ 	 FREX: australia, cent, australian, nsw, scheme, ban, labor 
+ 	 Lift: burk, cork, court, deterg, penni, statutori, australian 
+ 	 Score: australia, cent, nsw, australian, deterg, microbead, labor 
+Topic 9 Top Words:
+ 	 Highest Prob: economi, citi, wast, develop, action, sustain, plan 
+ 	 FREX: citi, incub, risn, phoenix, depart, action, ventur 
+ 	 Lift: dsni, reimagin, sketch, blazer, cash, confeder, dâme 
+ 	 Score: risn, incub, phoenix, icm, queensland, divis, nyc 
+Topic 10 Top Words:
+ 	 Highest Prob: pavilion, economi, compani, italian, import, exhibit, world 
+ 	 FREX: pavilion, italian, expo, nigeria, exhibit, dubai, itali 
+ 	 Lift: associati, carlo, cra, double-digit, gatto, glisenti, ingegneria 
+ 	 Score: pavilion, expo, italian, nigeria, server, ratti, exhibit 
+Topic 11 Top Words:
+ 	 Highest Prob: economi, project, access, event, develop, european, group 
+ 	 FREX: access, recommend, ticket, professor, event, workshop, financ 
+ 	 Lift: charact, lenni, sixth, access, copi, counteract, entitl 
+ 	 Score: access, financ, ticket, professor, mathild, invalid, queen 
+Topic 12 Top Words:
+ 	 Highest Prob: recycl, economi, product, understand, sustain, materi, industri 
+ 	 FREX: understand, glasgow, mit, lca, award, automot, kickstart 
+ 	 Lift: iarc, outset, understand, glasgow, quicker, kickstart, outcom 
+ 	 Score: understand, mit, glasgow, lca, robinson, kickstart, iarc 
+Topic 13 Top Words:
+ 	 Highest Prob: economi, recycl, materi, sustain, resourc, product, chang 
+ 	 FREX: tarkett, floor, fibr, webinar, carbon, live, resid 
+ 	 Lift: aberdeenshir, denver, ethanol, failur, frost, kpmg, lcitp 
+ 	 Score: tarkett, floor, fibr, webinar, wastewat, resid, denver 
+Topic 14 Top Words:
+ 	 Highest Prob: plastic, recycl, process, technolog, product, materi, chemic 
+ 	 FREX: omv, acc, polym, feedstock, pyrolysi, carpet, crude 
+ 	 Lift: bopp, post-, rpta, -mechan, acc, antonello, aua 
+ 	 Score: omv, polym, pyrolysi, feedstock, acc, crude, carbio 
+Topic 15 Top Words:
+ 	 Highest Prob: wast, plastic, energi, packag, compani, recycl, commit 
+ 	 FREX: waste--energi, melco, opinion, inciner, macau, resort, burn 
+ 	 Lift: dioxin, lawrenc, macau, manila, accesswir, amen, entertain 
+ 	 Score: melco, waste--energi, opinion, macau, casino, biowast, resort 
+Topic 16 Top Words:
+ 	 Highest Prob: global, growth, economi, nation, polici, econom, increas 
+ 	 FREX: boundari, throughput, advantag, wealth, economist, capit, sens 
+ 	 Lift: intellectu, quantit, nyt, permiss, solidar, treati, wealth 
+ 	 Score: throughput, boundari, wealth, contradict, richer, logic, trade 
+Topic 17 Top Words:
+ 	 Highest Prob: packag, recycl, consum, design, return, product, brand 
+ 	 FREX: return, logist, packag, -commerc, retail, brand, revers 
+ 	 Lift: bespok, inconveni, jewelleri, seamless, -store, emea, erik 
+ 	 Score: packag, logist, -commerc, return, sofa, auction, terracycl 
+Topic 18 Top Words:
+ 	 Highest Prob: product, wast, recycl, compani, materi, servic, plastic 
+ 	 FREX: print, cooki, websit, printer, repsol, robot, experi 
+ 	 Lift: delet, iii, aalto, acquia, attack, cpa, fast-track 
+ 	 Score: cooki, print, hps, pallet, robot, repsol, brick 
+Topic 19 Top Words:
+ 	 Highest Prob: plastic, wast, recycl, product, materi, economi, industri 
+ 	 FREX: rubicon, odakyu, construct, japan, litter, european, parliament 
+ 	 Lift: balloon, castel, closur, cutleri, hisatomi, masashi, railway 
+ 	 Score: odakyu, rubicon, japan, brick, fkur, litter, construct 
+Topic 20 Top Words:
+ 	 Highest Prob: climat, energi, compani, target, emiss, parti, chang 
+ 	 FREX: parti, women, climat, emiss, target, shes, solar 
+ 	 Lift: lawyer, allen, shes, california, engi, nevada, democrat 
+ 	 Score: parti, women, shes, solar, nevada, wind, engi 
+","https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/input_master/2019.03.png?raw=true"
+"2019.06","input_master","Topic 1 Top Words:
+ 	 Highest Prob: recycl, wast, plastic, year, program, economi, sitra 
+ 	 FREX: sitra, kong, hong, beverag, ontario, deposit, drs 
+ 	 Lift: mayor, vangipuram, elis, mak, multi-prong, shruthi, ernesto 
+ 	 Score: mayor, sitra, kong, drs, hong, deposit, ontario 
+Topic 2 Top Words:
+ 	 Highest Prob: repair, economi, compani, thing, product, push, materi 
+ 	 FREX: push, appl, repair, atlanta, comput, thing, fix 
+ 	 Lift: chandler, endur, iphon, jane, ludwig-vogen, alava, dare 
+ 	 Score: push, appl, repair, atlanta, comput, laptop, iphon 
+Topic 3 Top Words:
+ 	 Highest Prob: economi, busi, servic, move, product, reus, fashion 
+ 	 FREX: asset, page, fashion, servic, move, maximis, refurbish 
+ 	 Lift: error, brows, browser, expir, javascript, reintroduc, sitemap 
+ 	 Score: page, asset, ireland, fashion, refurbish, browser, javascript 
+Topic 4 Top Words:
+ 	 Highest Prob: bird, countri, cloth, speci, conserv, intern, import 
+ 	 FREX: bird, speci, treati, pcg, trump, rwanda, conserv 
+ 	 Lift: beat, donald, migrant, tanzania, bhd, congress, daffair 
+ 	 Score: bird, treati, speci, trump, rwanda, beat, eac 
+Topic 5 Top Words:
+ 	 Highest Prob: plastic, wast, recycl, economi, product, countri, packag 
+ 	 FREX: plastic, malaysia, gef, litter, african, framework, africa 
+ 	 Lift: downcycl, sgp, community-bas, worthwhil, here, tomra, quadrupl 
+ 	 Score: here, gef, african, marin, drs, basel, litter 
+Topic 6 Top Words:
+ 	 Highest Prob: economi, plastic, wast, sustain, busi, london, product 
+ 	 FREX: london, organis, resource-effici, privat, week, tour, £bn 
+ 	 Lift: appetit, hubbard, lovenotlandfil, wayn, ceas, circulair, dame 
+ 	 Score: london, £bn, resource-effici, ree, tour, lwarb, volunt 
+Topic 7 Top Words:
+ 	 Highest Prob: recycl, product, loop, plastic, contain, compani, sustain 
+ 	 FREX: tote, shipment, indianapoli, loop, request, contain, reusabl 
+ 	 Lift: sabic, allyson, clorox, coca, cola, indianapoli, invalid 
+ 	 Score: tote, server, indianapoli, indiana, shipment, ice, cream 
+Topic 8 Top Words:
+ 	 Highest Prob: recycl, wast, process, materi, manufactur, batteri, scrap 
+ 	 FREX: lithium, scrap, batteri, wensleydal, cement, mill, chines 
+ 	 Lift: creameri, harmonis, inflat, optic, redirect, topsoil, wensleydal 
+ 	 Score: lithium, batteri, chees, copper, redirect, wensleydal, cement 
+Topic 9 Top Words:
+ 	 Highest Prob: compani, packag, economi, sustain, citi, recycl, food 
+ 	 FREX: googl, lab, lauder, esté, circular, coalit, ellen 
+ 	 Lift: -goal, bio-sourc, jar, nanci, olay, paulo, recover 
+ 	 Score: googl, lab, lauder, circular, esté, basf, coalit 
+Topic 10 Top Words:
+ 	 Highest Prob: materi, product, plastic, recycl, design, economi, make 
+ 	 FREX: engel, marcus, fair, macarthur, shoe, cradl, ellen 
+ 	 Lift: -cycl, ceflex, ecodesign, engel, engled, fixtur, mask 
+ 	 Score: engel, marcus, shoe, adhes, fair, cradl, macarthur 
+Topic 11 Top Words:
+ 	 Highest Prob: recycl, wast, design, materi, product, singapor, develop 
+ 	 FREX: search, trashpresso, huang, ljubljana, singapor, khor, coaster 
+ 	 Lift: candy-mak, coaster, liken, pool, search, shanghai, -mingl 
+ 	 Score: search, trashpresso, huang, coaster, khor, ljubljana, mini 
+Topic 12 Top Words:
+ 	 Highest Prob: economi, innov, polici, develop, global, busi, environ 
+ 	 FREX: wcef, forum, finland, polici, region, baltic, cooper 
+ 	 Lift: -organis, calleja, climate-ambiti, czerniak, director-gener, ecomondo, edgerton 
+ 	 Score: wcef, finland, baltic, sitra, eusbsr, qatar, austria 
+Topic 13 Top Words:
+ 	 Highest Prob: economi, resourc, product, year, billion, industri, wast 
+ 	 FREX: kant, bio-bas, aayog, niti, billion, resourc, popul 
+ 	 Lift: --half, -renew, -tank, -wheeler, lakh, nsw, aayog 
+ 	 Score: kant, niti, aayog, crore, amitabh, lakh, -govern 
+Topic 14 Top Words:
+ 	 Highest Prob: -wast, plastic, recycl, pepsico, electron, wast, packag 
+ 	 FREX: pepsico, -wast, nigeria, electron, weee, forwardlook, debri 
+ 	 Lift: -standard, agbogbloshi, carcinogen, freezer, ghana, gpap, kettl 
+ 	 Score: -wast, nigeria, pepsico, forwardlook, eac, weee, lifewtr 
+Topic 15 Top Words:
+ 	 Highest Prob: wast, recycl, citi, plastic, system, make, peopl 
+ 	 FREX: privaci, charlott, malta, resid, free, aluminium, cooki 
+ 	 Lift: --distant, ass, balluta, beteendelabbet, brain, buse, catamaran 
+ 	 Score: charlott, permiss, privaci, malta, manur, cooki, aluminium 
+Topic 16 Top Words:
+ 	 Highest Prob: good, busi, rental, sustain, stuff, citi, green 
+ 	 FREX: rental, amazon, recommerc, stuff, dow, storm, roof 
+ 	 Lift: jewelri, law-abid, logo, manhattan, pop-, recommerc, rei 
+ 	 Score: rental, amazon, recommerc, stuff, roof, logo, rei 
+Topic 17 Top Words:
+ 	 Highest Prob: plastic, ban, single-, wast, recycl, ocean, product 
+ 	 FREX: zealand, ban, toy, bag, california, single-, trudeau 
+ 	 Lift: cbc, cepa, ciac, cpia, judgment, justin, legislatur 
+ 	 Score: toy, zealand, trudeau, parley, bag, california, canadian 
+Topic 18 Top Words:
+ 	 Highest Prob: recycl, braskem, sustain, union, philadelphia, partnership, india 
+ 	 FREX: braskem, philadelphia, stadium, union, talen, wastepap, cup 
+ 	 Lift: brkm, human-ori, idesa, nikolich, philadelphia, pittsburgh, stack 
+ 	 Score: braskem, philadelphia, stadium, talen, fan, bluevis, smith 
+Topic 19 Top Words:
+ 	 Highest Prob: wast, australia, china, economi, environ, product, busi 
+ 	 FREX: australia, australian, china, insect, tyre, solar, fruit 
+ 	 Lift: democrat, accid, ccice, journalist, highway, insect, tyre 
+ 	 Score: australia, democrat, china, australian, tyre, insect, solar 
+Topic 20 Top Words:
+ 	 Highest Prob: student, eit, rawmateri, school, europ, climat, raw 
+ 	 FREX: rawmateri, eit, scs, styren, albert, student, philippin 
+ 	 Lift: profil, rawmateri, scs, drought, manila, styren, eit 
+ 	 Score: rawmateri, eit, profil, scs, student, styren, albert 
+","https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/input_master/2019.06.png?raw=true"
+"2019.09","input_master","Topic 1 Top Words:
+ 	 Highest Prob: wast, economi, product, recycl, materi, busi, reus 
+ 	 FREX: wast, reus, product, materi, economi, seek, concept 
+ 	 Lift: web, japanes, webinar, occur, hesit, page, seek 
+ 	 Score: japanes, web, page, dispos, recycl, materi, polici 
+Topic 2 Top Words:
+ 	 Highest Prob: plastic, wast, project, chain, manag, stop, suppli 
+ 	 FREX: allianc, stop, jembrana, trump, ocean, chain, island 
+ 	 Lift: jembrana, -mind, aepw, alfr, alliance-fund, gartner, northwest 
+ 	 Score: jembrana, trump, allianc, gartner, boreali, steutermann, leakag 
+Topic 3 Top Words:
+ 	 Highest Prob: sustain, busi, climat, develop, chang, action, peopl 
+ 	 FREX: young, youth, stakehold, leader, aci, climat, summit 
+ 	 Lift: aci, barbi, enrich, entrench, existenti, fearless, hockstad 
+ 	 Score: young, pwc, aci, boulder, youth, summit, philippin 
+Topic 4 Top Words:
+ 	 Highest Prob: year, countri, busi, convent, store, amend, plastic 
+ 	 FREX: sep, amend, assisi, chocol, asean, dublin, convent 
+ 	 Lift: assisi, avocado, bloc, chocol, curriculum, enlarg, irish 
+ 	 Score: asean, sep, amend, dublin, assisi, franci, pope 
+Topic 5 Top Words:
+ 	 Highest Prob: energi, emiss, climat, economi, carbon, reduc, report 
+ 	 FREX: emiss, remov, carbon, energi, ellen, macarthur, climat 
+ 	 Lift: emf, fifth, runoff, afound, anna, arket, baselin 
+ 	 Score: remov, emiss, roof, climat, ellen, macarthur, net- 
+Topic 6 Top Words:
+ 	 Highest Prob: citi, innov, fab, global, year, fashion, challeng 
+ 	 FREX: fab, lab, solv, solver, prize, citi, oakland 
+ 	 Lift: -mingl, $-atonn, air-ink, andan, awesom, cowork, dubai 
+ 	 Score: fab, lab, solver, oakland, prize, fashion, citi 
+Topic 7 Top Words:
+ 	 Highest Prob: design, fashion, twitter, event, award, includ, climat 
+ 	 FREX: twitter, sunday, festiv, interior, award, death, franci 
+ 	 Lift: twitter, reuter, donald, grave, prayer, vatican, upend 
+ 	 Score: twitter, sunday, franci, fashion, pope, pari, prayer 
+Topic 8 Top Words:
+ 	 Highest Prob: recycl, packag, materi, plastic, product, technolog, process 
+ 	 FREX: mold, milliken, purecycl, film, color, pet, machin 
+ 	 Lift: -food, -hazard, -hood, absorpt, belgian, brune, cellphon 
+ 	 Score: film, mold, resin, color, pet, milliken, automot 
+Topic 9 Top Words:
+ 	 Highest Prob: recycl, plastic, wast, collect, resourc, materi, landfil 
+ 	 FREX: australia, cup, recoveri, road, south, tonn, sort 
+ 	 Lift: holla-fresh, melbourn, pine, pot, restorick, rpa, semi 
+ 	 Score: cup, bin, plastic, australia, tonn, contain, coffe 
+Topic 10 Top Words:
+ 	 Highest Prob: item, recycl, save, economi, buy, trash, peopl 
+ 	 FREX: cleanup, ticket, trash, singapor, buy, item, throw 
+ 	 Lift: thredup, -store, admiss, antonelli, arm, asic, basalt 
+ 	 Score: ticket, cleanup, bin, dezeen, thredup, volunt, item 
+Topic 11 Top Words:
+ 	 Highest Prob: recycl, bill, plastic, california, packag, wast, local 
+ 	 FREX: doesnt, california, allen, legislatur, calrecycl, bill, pass 
+ 	 Lift: gavin, gma, lorena, oppon, recolog, redempt, stein 
+ 	 Score: doesnt, california, bill, allen, legislatur, calrecycl, newsom 
+Topic 12 Top Words:
+ 	 Highest Prob: plastic, solut, industri, univers, countri, environ, manag 
+ 	 FREX: scg, thailand, india, dow, javadekar, bangkok, feedstock 
+ 	 Lift: caribbean, chancellor, gyre, jim, rayong, -dollar-aton, -femal 
+ 	 Score: scg, thailand, dow, javadekar, india, exxpedit, univers 
+Topic 13 Top Words:
+ 	 Highest Prob: research, project, univers, industri, economi, finland, inform 
+ 	 FREX: finland, request, digit, visit, intellig, univers, research 
+ 	 Lift: abstract, brunel, citat, bibliograph, cooki, disabl, httpwwwspringercom 
+ 	 Score: request, finland, finnish, univers, repec, cooki, abstract 
+Topic 14 Top Words:
+ 	 Highest Prob: materi, european, sustain, raw, product, europ, industri 
+ 	 FREX: european, raw, europ, commiss, eit, polici, carton 
+ 	 Lift: assum, biomass, eit, eus, jumpstart, -fold, attach 
+ 	 Score: raw, european, eit, cepi, ball, commiss, indic 
+Topic 15 Top Words:
+ 	 Highest Prob: economi, sustain, busi, model, compani, econom, industri 
+ 	 FREX: tourism, taiwan, principl, enterpris, linear, lwarb, qsa 
+ 	 Lift: warranti, alpin, asia-pacif, decoupl, endow, epa, farfetch 
+ 	 Score: tourism, taiwan, lwarb, qsa, helsinki, librari, uae 
+Topic 16 Top Words:
+ 	 Highest Prob: scotland, govern, bill, year, scottish, industri, climat 
+ 	 FREX: scotland, scottish, sturgeon, aluminium, bill, scheme, freight 
+ 	 Lift: championship, defam, eutroph, forens, holyrood, jeopardis, msps 
+ 	 Score: scottish, scotland, sturgeon, bill, aluminium, freight, scheme 
+Topic 17 Top Words:
+ 	 Highest Prob: compani, batteri, recycl, sustain, electr, product, vehicl 
+ 	 FREX: lycra, lycra®, batteri, coolmax®, thermolite®, mine, eastman 
+ 	 Lift: -assess, -financi, -oy, -peak, -reusabl, -solut, -suppli 
+ 	 Score: lycra, batteri, lycra®, eastman, mine, coolmax®, thermolite® 
+Topic 18 Top Words:
+ 	 Highest Prob: sustain, brand, make, exist, product, consum, chang 
+ 	 FREX: exist, brand, purpos, cloth, -shirt, textil, fashion 
+ 	 Lift: bare, basin, cassava, detriment, dye, eco-fashion, entertain 
+ 	 Score: exist, fashion, brand, -shirt, podcast, cloth, era 
+Topic 19 Top Words:
+ 	 Highest Prob: food, water, synthet, industri, beer, produc, africa 
+ 	 FREX: beer, synthet, bread, woolworth, ale, loafer, meal 
+ 	 Lift: ale, bws, dupont, gaudri, hoppi, josh, loafer 
+ 	 Score: beer, synthet, woolworth, bread, ale, loafer, meal 
+Topic 20 Top Words:
+ 	 Highest Prob: compani, energi, work, technolog, sustain, year, make 
+ 	 FREX: leadership, virgin, shah, farmer, pod, solar, coffe 
+ 	 Lift: crack, shah, angeles-bas, branson, facedr, multifacet, pennsylvania 
+ 	 Score: shah, farmer, nichol, leadership, pod, coffe, california 
+","https://github.com/FrankDongers/Google-Alert-Article-Scraper/blob/master/model/output/input_master/2019.09.png?raw=true"
