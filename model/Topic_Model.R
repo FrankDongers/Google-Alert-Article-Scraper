@@ -53,10 +53,27 @@ for (s in article_list) {
     #plot(First_STM)
     
     textSummary <- summary(First_STM)
+    tempSummary <- textSummary[["prob"]]
+    n_topics <- nrow(tempSummary)
+    n_words <- ncol(tempSummary)
+    
+    textSummaryOutput <- ""
+    
+    for (topic_val in 1:n_topics){
+      textSummaryOutput <- paste(textSummaryOutput,"Topic")
+      textSummaryOutput <- paste(textSummaryOutput,topic_val)
+      textSummaryOutput <- paste(textSummaryOutput,":", sep="")
+      for (word_val in 1:n_words){
+        print(tempSummary[topic_val,word_val])
+        textSummaryOutput <- paste(textSummaryOutput,tempSummary[topic_val,word_val])
+        textSummaryOutput <- paste(textSummaryOutput,",", sep="")
+      }
+      textSummaryOutput <- paste(textSummaryOutput,"\n")
+    }
     tempfilenamepng <- paste("/Users/FrankMAC/Desktop/Google-Alert-Link-Grabber/model/output/", inputLocation, "/", d, ".png", sep="")
     tempfilenametxt <- paste("/Users/FrankMAC/Desktop/Google-Alert-Link-Grabber/model/output/", inputLocation, "/", d, ".txt", sep="")
     
-    capture.output(textSummary, file = tempfilenametxt)
+    capture.output(textSummaryOutput, file = tempfilenametxt)
     png(filename=tempfilenamepng, width = 750, height = 750, res = 135)
     plot(mod.out.corr)
     dev.off()
@@ -69,7 +86,7 @@ for (s in article_list) {
   
     csv_date <- c(csv_date, d)
     csv_region <- c(csv_region, inputLocation)
-    csv_content <- c(csv_content, tempSummaryData)
+    csv_content <- c(csv_content, textSummaryOutput)
     csv_image <- c(csv_image, tempimgLoc)
     
     #labelTopics(First_STM, topics = NULL, n = 5, frexweight = 0.5)
