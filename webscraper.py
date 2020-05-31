@@ -7,6 +7,7 @@ import socket
 import sys
 from geolite2 import geolite2
 from goose3 import Goose
+import time
 
 class MLStripper(HTMLParser):
 	def __init__(self):
@@ -28,10 +29,10 @@ try:
 except:
 	pass
 
-europe = ["United Kingdom","Scotland","Hungary","Germany","Belgium","European Union","Switzerland","Norway","Netherlands","France","Ireland","Estonia","Finland","Malta","Sweden","Italy","Slovakia","Republic of Moldova","Spain","Luxembourg","Austria"]
+europe = ["United Kingdom","Scotland","Hungary","Germany","Belgium","European Union","Switzerland","Norway","Netherlands","France","Ireland","Estonia","Finland","Malta","Sweden","Italy","Slovakia","Republic of Moldova","Spain","Luxembourg","Austria","Spain"]
 asia = ["India","Thailand","Singapore","Nepal","Republic of Korea","Taiwan","China","Japan","Macao","Qatar","Malaysia","Pakistan","Bangladesh"]
 north_america = ["United States","Canada"]
-africa = ["South Africa","Rwanda","Tanzania"]
+africa = ["South Africa","Rwanda","Tanzania","Algeria"]
 oceana = ["New Zealand","Australia"]
 south_america = ["Colombia"]
 na = ["N/A"]
@@ -51,10 +52,12 @@ domainDict = {"ae":"United Arab Emirates",
 "cn":"China",
 "co":"Colombia",
 "cu":"Cuba",
+"es":"Spain",
 "cz":"Czech Republic",
 "de":"Germany",
 "dk":"Denmark",
-"dm":"Dominica",	
+"dm":"Dominica",
+"dz":"Algeria",
 "fr":"France",
 "hk":"Hong Kong",
 "hr":"Croatia",
@@ -98,7 +101,8 @@ domainDict = {"ae":"United Arab Emirates",
 file = "output.csv"
 with open('links.txt', 'r+') as filehandle:
 	i = 0
-	isPersistent = False
+	isPersistent = True
+	errorCount = 0
 
 	#Create model input files
 	if (isPersistent == False):
@@ -218,8 +222,11 @@ with open('links.txt', 'r+') as filehandle:
 			articleText = article.cleaned_text
 			articleTitle = article.title
 
+			
+
 			if (articleText != "" and articleText != " " and linkVal.lower().find(".pdf") == -1):
 				completedLines.append(line)
+				errorCount = 0
 				with open('model/input/input_master.csv', 'a') as file:
 					write_file = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 					write_file.writerow([str(i+1), articleTitle, articleText, countryLabel, timeVal])
@@ -262,9 +269,12 @@ with open('links.txt', 'r+') as filehandle:
 				os._exit(0)
 		except Exception as e:
 			print (e)
+			errorCount = errorCount + 1
 			print("======================")
 			print("Last line completed =" + completedLines[-1])
 			print("======================")
+			if (errorCount > 2):
+				time.sleep(60)
 			pass
 		i = i + 1
 
